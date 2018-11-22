@@ -1,0 +1,21 @@
+<div class="navbar-wagon">
+  <!-- Logo -->
+   <%= link_to cocktails_path, class: "navbar-wagon-brand" do %>
+    <%= image_tag "cocktail.png", height: 100 %>
+  <% end %>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+    <!-- Links -->
+
+<div class="banner">
+  <h1>Mister Cocktail</h1>
+    <button type="button" class="btn btn-primary"><%= link_to 'Add Cocktail', cocktails_new_path%></button>
+</div>
+
+    <% @cocktails.each do |cocktail| %>
+      <li><%= cocktail.name %></li>
+    <% end %>
+  </tbody>
+</table>
